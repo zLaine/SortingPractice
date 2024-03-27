@@ -10,6 +10,11 @@ public class FarmerAlBaryardInventoryApplicationTwo {
 		FileService fileService = new FileService();
 		Pig[] pigs = fileService.getPigsFromFile();
 		String[] pigNames = new String[4];
+
+		for(Pig piggy : pigs){
+			System.out.println(piggy.getName() + " is " + piggy.getStatus());
+
+		}
   		
 		// SORT the pigs by name...
 		
